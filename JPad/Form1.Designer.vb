@@ -28,14 +28,14 @@ Partial Class Form1
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveAsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveCurrentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.JPadLockerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.LockFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UnlockAndViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
@@ -75,6 +75,12 @@ Partial Class Form1
         Me.SaveCurrentToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveCurrentToolStripMenuItem.Text = "Save Current"
         '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
@@ -93,6 +99,18 @@ Partial Class Form1
         Me.JPadLockerToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
         Me.JPadLockerToolStripMenuItem.Text = "JPad Locker"
         '
+        'LockFileToolStripMenuItem
+        '
+        Me.LockFileToolStripMenuItem.Name = "LockFileToolStripMenuItem"
+        Me.LockFileToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.LockFileToolStripMenuItem.Text = "Lock and Save"
+        '
+        'UnlockAndViewToolStripMenuItem
+        '
+        Me.UnlockAndViewToolStripMenuItem.Name = "UnlockAndViewToolStripMenuItem"
+        Me.UnlockAndViewToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
+        Me.UnlockAndViewToolStripMenuItem.Text = "Unlock File and View"
+        '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
@@ -107,24 +125,6 @@ Partial Class Form1
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(121, 17)
         Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
-        '
-        'LockFileToolStripMenuItem
-        '
-        Me.LockFileToolStripMenuItem.Name = "LockFileToolStripMenuItem"
-        Me.LockFileToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.LockFileToolStripMenuItem.Text = "Lock and Save"
-        '
-        'UnlockAndViewToolStripMenuItem
-        '
-        Me.UnlockAndViewToolStripMenuItem.Name = "UnlockAndViewToolStripMenuItem"
-        Me.UnlockAndViewToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
-        Me.UnlockAndViewToolStripMenuItem.Text = "Unlock File and View"
-        '
-        'OpenToolStripMenuItem
-        '
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.OpenToolStripMenuItem.Text = "Open"
         '
         'RichTextBox1
         '
