@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="JPad.exe" version="0.0.0.7" publicKeyToken="0000000000000000" language="en-US" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="JPad.exe" version="0.0.0.6" publicKeyToken="a3904ad1aab9696c" language="en-US" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="pyc.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="JPad" version="0.0.0.7" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="JPad" version="0.0.0.1" language="neutral" processorArchitecture="msil" />
     <commandLine file="JPad.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,13 +44,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JPad.exe" size="116224">
-      <assemblyIdentity name="JPad" version="0.0.0.7" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="JPad" version="0.0.0.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>A3ly7I11YtDFBjvMQ83YQlQXteJq23eZTkq9SOpjLww=</dsig:DigestValue>
+        <dsig:DigestValue>rK9AOiPaAZZ43doxQvIK1bnMQGAjyVYCJJCqbjmHfUA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -84,4 +84,4 @@
       <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
     </application>
   </compatibility>
-</asmv1:assembly>
+<publisherIdentity name="CN=LoveTheLolis-PC\Love The Lolis" issuerKeyHash="41e8dc36828a7fb2e1185c10559a99b2f21876a4" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ESu5ykTKl9rDUfS3aLuXt3mtBj3WGMZoy0Qv/CgtI1s=</DigestValue></Reference></SignedInfo><SignatureValue>SpefjDerVEGQnHJhvodLtOVQohoai3/ql6KhpcFKKjWUAwdg8TS0AmCo+nYsF0yMnm/tEweCgmN/LFB0ZiKYXeGN8rL9Kz+WIIlNZS5NnSwpwlvvjpa7U369YAlloNcSvTd9iAya+qlFNz0Cc+xzlpdFVh0P6cqxmjfrT/YFibY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zgGys9Lnd5T1aZ3jQEdSDFyZqzaZssZ9ButeOIKDrPPFhjy1UBNWsN0FQHrSIXaLoibcOT0205dL7Vw2PHj7YUxOa0/fw3pD9Mmrn0LNIKwtPgFFMMUPc4T+rYViMIgyHs25HgtdS8HQWqi3X9q7YqCHeFzlJVMR/yj5rTWkoQc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5b232d28fc2f44cb68c618d63d06ad79b797bb68b7f451c3da97ca44cab92b11" Description="" Url=""><as:assemblyIdentity name="JPad.exe" version="0.0.0.6" publicKeyToken="a3904ad1aab9696c" language="en-US" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LoveTheLolis-PC\Love The Lolis</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>S1XL/NNfa4GPhVrXuG1Px3XWj88nuiSL46Hz0QHRCCo=</DigestValue></Reference></SignedInfo><SignatureValue>J2aKTssaWWWGqC+qxX/vGc1uHovFIwkt0LnKKj1EGignq6C7522Yi+mfplSzQ1GbqrL6vKXv0pqFIiuwpLiDrSb8bc/rWgPYPShIj9oUQNKVC9VmR6c3PgULubnRuTrV8WQRNhr4Nu4sY3uPHC0icgn0l0+uZREmBrBVo5CzEu8=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zgGys9Lnd5T1aZ3jQEdSDFyZqzaZssZ9ButeOIKDrPPFhjy1UBNWsN0FQHrSIXaLoibcOT0205dL7Vw2PHj7YUxOa0/fw3pD9Mmrn0LNIKwtPgFFMMUPc4T+rYViMIgyHs25HgtdS8HQWqi3X9q7YqCHeFzlJVMR/yj5rTWkoQc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICETCCAXqgAwIBAgIQelaY3SRUgYVNGxlJymS2NjANBgkqhkiG9w0BAQsFADBHMUUwQwYDVQQDHjwATABvAHYAZQBUAGgAZQBMAG8AbABpAHMALQBQAEMAXABMAG8AdgBlACAAVABoAGUAIABMAG8AbABpAHMwHhcNMTYwNTIxMTUyMjI0WhcNMTcwNTIxMjEyMjI0WjBHMUUwQwYDVQQDHjwATABvAHYAZQBUAGgAZQBMAG8AbABpAHMALQBQAEMAXABMAG8AdgBlACAAVABoAGUAIABMAG8AbABpAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM4BsrPS53eU9Wmd40BHUgxcmas2mbLGfQbrXjiCg6zzxYY8tVATVrDdBUB60iF2i6Im3Dk9NtOXS+1cNjx4+2FMTmtP38N6Q/TJq59CzSCsLT4BRTDFD3OE/q2FYjCIMh7NuR4LXUvB0Fqot1/au2Kgh3hc5SVTEf8o+a01pKEHAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAtp7mygs2/WHhjIRyJktITXnVfTyOVCMVIQLC1xBztk0+VtoaCMk770uX7KKNLbGvNL8gBCihLIRiZFlUu90YnJebHhzZumOVQQlz+xECQvOYiZ+TjPcGL+eOFb4BBxp/7I8CaN9TwejkwYi0okat5zFYMhkeEtMbu7GS/P1eWho=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
