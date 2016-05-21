@@ -27,9 +27,9 @@
     <ProductName>JPad</ProductName>
     <PublisherName>Joe%27s Apps</PublisherName>
     <SuiteName>Locker Suit</SuiteName>
-    <MinimumRequiredVersion>0.0.0.8</MinimumRequiredVersion>
+    <MinimumRequiredVersion>0.0.0.9</MinimumRequiredVersion>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationRevision>9</ApplicationRevision>
     <ApplicationVersion>0.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>

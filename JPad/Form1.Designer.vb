@@ -34,18 +34,21 @@ Partial Class Form1
         Me.JPadLockerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LockFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UnlockAndViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.ChangeSelectedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeEntireToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.JPadLockerToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.JPadLockerToolStripMenuItem, Me.FontToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(773, 24)
@@ -77,6 +80,7 @@ Partial Class Form1
         Me.SaveCurrentToolStripMenuItem.Name = "SaveCurrentToolStripMenuItem"
         Me.SaveCurrentToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveCurrentToolStripMenuItem.Text = "Save Current"
+        Me.SaveCurrentToolStripMenuItem.Visible = False
         '
         'OpenToolStripMenuItem
         '
@@ -115,6 +119,13 @@ Partial Class Form1
         Me.UnlockAndViewToolStripMenuItem.Size = New System.Drawing.Size(183, 22)
         Me.UnlockAndViewToolStripMenuItem.Text = "Unlock File and View"
         '
+        'FontToolStripMenuItem
+        '
+        Me.FontToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeSelectedToolStripMenuItem, Me.ChangeEntireToolStripMenuItem})
+        Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.FontToolStripMenuItem.Text = "Font"
+        '
         'StatusStrip1
         '
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.ToolStripStatusLabel3})
@@ -123,21 +134,13 @@ Partial Class Form1
         Me.StatusStrip1.Size = New System.Drawing.Size(773, 22)
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
+        Me.StatusStrip1.Visible = False
         '
         'ToolStripStatusLabel1
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(75, 17)
         Me.ToolStripStatusLabel1.Text = "Word Count:"
-        '
-        'RichTextBox1
-        '
-        Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox1.Location = New System.Drawing.Point(0, 24)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(773, 470)
-        Me.RichTextBox1.TabIndex = 2
-        Me.RichTextBox1.Text = ""
         '
         'ToolStripStatusLabel2
         '
@@ -150,6 +153,27 @@ Partial Class Form1
         Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
         Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(155, 17)
         Me.ToolStripStatusLabel3.Text = "(Word Count is Under work)"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RichTextBox1.Location = New System.Drawing.Point(0, 24)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(773, 492)
+        Me.RichTextBox1.TabIndex = 2
+        Me.RichTextBox1.Text = ""
+        '
+        'ChangeSelectedToolStripMenuItem
+        '
+        Me.ChangeSelectedToolStripMenuItem.Name = "ChangeSelectedToolStripMenuItem"
+        Me.ChangeSelectedToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ChangeSelectedToolStripMenuItem.Text = "Change Selected"
+        '
+        'ChangeEntireToolStripMenuItem
+        '
+        Me.ChangeEntireToolStripMenuItem.Name = "ChangeEntireToolStripMenuItem"
+        Me.ChangeEntireToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ChangeEntireToolStripMenuItem.Text = "Change Entire"
         '
         'Form1
         '
@@ -188,5 +212,8 @@ Partial Class Form1
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents ToolStripStatusLabel2 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents ToolStripStatusLabel3 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents FontToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ChangeSelectedToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ChangeEntireToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

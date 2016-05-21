@@ -32,6 +32,7 @@ Public Class Form1
         Try
             RichTextBox1.Clear()
             NewFile = 1
+            SaveCurrentToolStripMenuItem.Visible = 0
         Catch ex As Exception
         End Try
     End Sub
@@ -40,9 +41,10 @@ Public Class Form1
         Try
             SaveAs.ShowDialog()
             RichTextBox1.SaveFile(SaveAs.FileName)
-            Me.Text = "JPad - The Secret Notepad for Writers " + SaveAs.FileName
+            Me.Text = "JPad - The Secret Notepad for Writers - " + SaveAs.FileName
             SaveCurrentToolStripMenuItem.Enabled = 1
             NewFile = 0
+            SaveCurrentToolStripMenuItem.Visible = 1
         Catch ex As Exception
 
         End Try
@@ -52,6 +54,7 @@ Public Class Form1
     Private Sub SaveCurrentToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveCurrentToolStripMenuItem.Click
         Try
             RichTextBox1.SaveFile(SaveAs.FileName)
+            Me.Text = "JPad - The Secret Notepad for Writers - " + SaveAs.FileName
         Catch ex As Exception
 
         End Try
@@ -62,6 +65,7 @@ Public Class Form1
             OpenFile.ShowDialog()
             RichTextBox1.LoadFile(OpenFile.FileName)
             NewFile = 0
+            SaveCurrentToolStripMenuItem.Visible = 0
         Catch ex As Exception
 
         End Try
@@ -77,25 +81,38 @@ Public Class Form1
                 NewFile = 0
                 SaveCurrentToolStripMenuItem.Enabled = True
             End If
+            Me.Text = "JPad - The Secret Notepad for Writers - " + SaveAs.FileName + "*"
         Catch ex As Exception
 
         End Try
 
+        'Try
+        '    Dim strInput As String = RichTextBox1.Text
+        '    Dim strSplit() As String
+        '    strSplit = strInput.Split(CChar(" "))
+        '    ToolStripStatusLabel2.Text = (strSplit.Length)
+        'Catch ex As Exception
+
+        'End Try
+    End Sub
+
+    Private Sub ChangeSelectedToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeSelectedToolStripMenuItem.Click
         Try
-            Dim strInput As String = RichTextBox1.Text
-            Dim strSplit() As String
-            strSplit = strInput.Split(CChar(" "))
-            ToolStripStatusLabel2.Text = (strSplit.Length)
+            Dim DFont As New FontDialog
+            DFont.ShowDialog()
+            RichTextBox1.SelectionFont = DFont.Font
         Catch ex As Exception
 
         End Try
     End Sub
 
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        If NewFile = 0 Then
-            SaveCurrentToolStripMenuItem.Enabled = True
-        Else
-            SaveCurrentToolStripMenuItem.Enabled = False
-        End If
+    Private Sub ChangeEntireToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeEntireToolStripMenuItem.Click
+        Try
+            Dim DFont As New FontDialog
+            DFont.ShowDialog()
+            RichTextBox1.Font = DFont.Font
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class
