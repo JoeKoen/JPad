@@ -18,14 +18,10 @@ C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\bin\Debug\JPad.exe.config
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.exe
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.xml
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.pdb
-C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\bin\Debug\JPad.exe.manifest
-C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\bin\Debug\JPad.application
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\bin\Debug\JPad.exe
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\bin\Debug\JPad.pdb
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\bin\Debug\JPad.xml
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.Form1.resources
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.Resources.resources
 C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.vbproj.GenerateResource.Cache
-C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.TrustInfo.xml
-C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.exe.manifest
-C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.application
+C:\Users\Love The Lolis\Documents\GitHub\JPad\JPad\obj\Debug\JPad.LockScreen.resources

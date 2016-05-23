@@ -37,15 +37,16 @@ Partial Class Form1
         Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangeSelectedToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangeEntireToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeSelectedTextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeEntireDocumentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel3 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
-        Me.ColorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ChangeSelectedTextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ChangeEntireDocumentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -75,32 +76,32 @@ Partial Class Form1
         'SaveAsToolStripMenuItem
         '
         Me.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem"
-        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveAsToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.SaveAsToolStripMenuItem.Text = "Save As..."
         '
         'SaveCurrentToolStripMenuItem
         '
         Me.SaveCurrentToolStripMenuItem.Enabled = False
         Me.SaveCurrentToolStripMenuItem.Name = "SaveCurrentToolStripMenuItem"
-        Me.SaveCurrentToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveCurrentToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.SaveCurrentToolStripMenuItem.Text = "Save Current"
         Me.SaveCurrentToolStripMenuItem.Visible = False
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(154, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'JPadLockerToolStripMenuItem
@@ -141,6 +142,25 @@ Partial Class Form1
         Me.ChangeEntireToolStripMenuItem.Name = "ChangeEntireToolStripMenuItem"
         Me.ChangeEntireToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
         Me.ChangeEntireToolStripMenuItem.Text = "Change Entire Document"
+        '
+        'ColorToolStripMenuItem
+        '
+        Me.ColorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeSelectedTextToolStripMenuItem, Me.ChangeEntireDocumentToolStripMenuItem})
+        Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
+        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
+        Me.ColorToolStripMenuItem.Text = "Color"
+        '
+        'ChangeSelectedTextToolStripMenuItem
+        '
+        Me.ChangeSelectedTextToolStripMenuItem.Name = "ChangeSelectedTextToolStripMenuItem"
+        Me.ChangeSelectedTextToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.ChangeSelectedTextToolStripMenuItem.Text = "Change Selected Text"
+        '
+        'ChangeEntireDocumentToolStripMenuItem
+        '
+        Me.ChangeEntireDocumentToolStripMenuItem.Name = "ChangeEntireDocumentToolStripMenuItem"
+        Me.ChangeEntireDocumentToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
+        Me.ChangeEntireDocumentToolStripMenuItem.Text = "Change Entire Document"
         '
         'StatusStrip1
         '
@@ -189,30 +209,21 @@ Partial Class Form1
         Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         Me.PrintPreviewDialog1.Visible = False
         '
-        'ColorToolStripMenuItem
+        'TextBox1
         '
-        Me.ColorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeSelectedTextToolStripMenuItem, Me.ChangeEntireDocumentToolStripMenuItem})
-        Me.ColorToolStripMenuItem.Name = "ColorToolStripMenuItem"
-        Me.ColorToolStripMenuItem.Size = New System.Drawing.Size(48, 20)
-        Me.ColorToolStripMenuItem.Text = "Color"
-        '
-        'ChangeSelectedTextToolStripMenuItem
-        '
-        Me.ChangeSelectedTextToolStripMenuItem.Name = "ChangeSelectedTextToolStripMenuItem"
-        Me.ChangeSelectedTextToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
-        Me.ChangeSelectedTextToolStripMenuItem.Text = "Change Selected Text"
-        '
-        'ChangeEntireDocumentToolStripMenuItem
-        '
-        Me.ChangeEntireDocumentToolStripMenuItem.Name = "ChangeEntireDocumentToolStripMenuItem"
-        Me.ChangeEntireDocumentToolStripMenuItem.Size = New System.Drawing.Size(207, 22)
-        Me.ChangeEntireDocumentToolStripMenuItem.Text = "Change Entire Document"
+        Me.TextBox1.Location = New System.Drawing.Point(65, 104)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 79)
+        Me.TextBox1.TabIndex = 3
+        Me.TextBox1.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(773, 516)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -252,5 +263,6 @@ Partial Class Form1
     Friend WithEvents ColorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChangeSelectedTextToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChangeEntireDocumentToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 
 End Class
